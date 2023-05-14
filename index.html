@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QURAN KAREEM</title>
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body id="body">
+    <h3 class="text-center m-4">
+      آلُِلُِهـم آجٍعٍلُِ هـذَآ آلُِعٍملُِ خـآلُِصآ لُِوُجٍهـڪ آلُِڪرٍيم
+      وُتقٌبَلُِهـ منآ يآرٍبَ آلُِعٍآلُِمين
+    </h3>
+    <div class="container text-center">
+      <label for="search">ابحث باسم السوره</label>
+      <input
+        type="search"
+        class="form-control w-25 m-auto mt-2"
+        id="search"
+        onkeyup="search(this.value)"
+      />
+      <select
+        id="chose"
+        class="form-control fw-bold mt-2"
+        dir="ltr"
+        onchange="choseReciters(this.value)"
+      ></select>
+      <table class="table table-hover table-light text-center mt-3">
+        <thead>
+          <tr>
+            <th>رقم السوره</th>
+            <th>اسم السوره</th>
+            <th>رقم الصفحه</th>
+            <th>مكيه / مدنيه</th>
+            <th>عدد الايات</th>
+            <th>استماع</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
