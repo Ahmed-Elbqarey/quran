@@ -16,10 +16,12 @@
       وُتقٌبَلُِهـ منآ يآرٍبَ آلُِعٍآلُِمين
     </h3>
     <div class="container text-center">
-      <label for="search">ابحث باسم السوره</label>
+      <label class="fw-bold" for="search">ابحث باسم السوره</label>
       <input
+        placeholder="ابحث باسم السورة"
+        autofocus
         type="search"
-        class="form-control w-25 m-auto mt-2"
+        class="form-control m-auto mt-2"
         id="search"
         onkeyup="search(this.value)"
       />
@@ -35,14 +37,15 @@
             <th>رقم السوره</th>
             <th>اسم السوره</th>
             <th>رقم الصفحه</th>
-            <th>مكيه / مدنيه</th>
+            <th>مكان النزول</th>
             <th>عدد الايات</th>
-            <th>استماع</th>
+            <th>التلاوة</th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
       </table>
     </div>
+    <button id="go-up-button">^</button>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>

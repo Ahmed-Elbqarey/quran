@@ -1,3 +1,104 @@
 option {
   font-weight: 500;
 }
+input,
+select,
+table {
+  box-shadow: 0 0 15px #c3c3c3;
+}
+table thead tr {
+  border-bottom: 1px solid #000;
+}
+table thead th {
+  padding-bottom: 15px !important;
+}
+table tbody tr {
+  border-bottom: 1px solid #555;
+}
+#go-up-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #e5e6e7;
+  color: #333;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 11px;
+  font-weight: bolder !important;
+}
+#go-up-button:hover {
+  background-color: #555;
+  color: #fff;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+@media (max-width: 767.98px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin-bottom: 1rem;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+  }
+  td:nth-of-type(1):before {
+    color: #6c757d;
+    content: "رقم السوره";
+  }
+  td:nth-of-type(2):before {
+    color: #6c757d;
+    content: "اسم السوره";
+  }
+  td:nth-of-type(3):before {
+    color: #6c757d;
+    content: "رقم الصفحة";
+  }
+  td:nth-of-type(4):before {
+    color: #6c757d;
+    content: "مكان النزول";
+  }
+  td:nth-of-type(5):before {
+    color: #6c757d;
+    content: "عدد الآيات";
+  }
+  audio {
+    width: 100%;
+  }
+}
